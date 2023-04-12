@@ -1,5 +1,5 @@
 """
-Calificación del laboratorio
+Calificacion del laboratorio
 -----------------------------------------------------------------------------------------
 """
 
@@ -1449,7 +1449,7 @@ def test_08():
 
 
 def test_09():
-    assert pregunta.clean_data().línea_credito.value_counts().to_list() == [
+    assert pregunta.clean_data().linea_credito.value_counts().to_list() == [
         10020,
         70,
         55,
