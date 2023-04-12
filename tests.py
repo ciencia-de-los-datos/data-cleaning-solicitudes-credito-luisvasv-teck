@@ -1,5 +1,5 @@
 """
-Calificacion del laboratorio
+Calificación del laboratorio
 -----------------------------------------------------------------------------------------
 """
 
@@ -7,10 +7,8 @@ import sys
 
 import pregunta
 
-
 def test_01():
     assert pregunta.clean_data().sexo.value_counts().to_list() == [6617, 3589]
-
 
 def test_02():
     assert pregunta.clean_data().tipo_de_emprendimiento.value_counts().to_list() == [
@@ -19,7 +17,6 @@ def test_02():
         2201,
         164,
     ]
-
 
 def test_03():
     assert pregunta.clean_data().idea_negocio.value_counts().to_list() == [
@@ -99,7 +96,6 @@ def test_03():
         3,
         2,
     ]
-
 
 def test_04():
     assert pregunta.clean_data().barrio.value_counts().to_list() == [
@@ -330,7 +326,6 @@ def test_04():
         1,
     ]
 
-
 def test_05():
     assert pregunta.clean_data().estrato.value_counts().to_list() == [
         5023,
@@ -338,7 +333,6 @@ def test_05():
         2029,
         3,
     ]
-
 
 def test_06():
     assert pregunta.clean_data().comuna_ciudadano.value_counts().to_list() == [
@@ -364,7 +358,6 @@ def test_06():
         12,
         10,
     ]
-
 
 def test_07():
     assert pregunta.clean_data().fecha_de_beneficio.value_counts().to_list() == [
@@ -1165,7 +1158,6 @@ def test_07():
         1,
     ]
 
-
 def test_08():
     assert pregunta.clean_data().monto_del_credito.value_counts().to_list() == [
         1174,
@@ -1447,9 +1439,8 @@ def test_08():
         1,
     ]
 
-
 def test_09():
-    assert pregunta.clean_data().linea_credito.value_counts().to_list() == [
+    assert pregunta.clean_data().línea_credito.value_counts().to_list() == [
         10020,
         70,
         55,
